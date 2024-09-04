@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="icon" href="iconFR.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <title>Añadir Una Película</title>
+</head>
+<body>
+  <section id="bigContainer">
+    <form id="form">
+      <div class="banner"><img src="añadirBanner.png" width="400"></div>
+      <div class="inputsContainer">
+        <div class="input-container">
+          <input name="title" id="titleForm" class="input" type="text" placeholder=" " />
+          <div class="cut"></div>
+          <label for="titleForm" class="placeholder">Título</label>
+        </div>
+        <div class="input-container">
+          <input name="year" id="yearForm" class="input" type="number" placeholder=" " />
+          <div class="cut"></div>
+          <label for="yearForm" class="placeholder">Año</label>
+        </div>
+        <div class="input-container">
+          <input name="director" id="directorForm" class="input" type="text" placeholder=" " />
+          <div class="cut cut-short"></div>
+          <label for="directorForm" class="placeholder">Director</label>
+        </div>
+        <div class="input-container">
+          <input name="duration" id="lengthForm" class="input" type="text" placeholder=" " />
+          <div class="cut cut-short"></div>
+          <label for="lengthForm" class="placeholder">Duración(..hr..min)</label>
+        </div>
+        <div class="input-container">
+          <input name="rate" id="rateForm" class="input" type="number" placeholder=" " />
+          <div class="cut cut-short"></div>
+          <label for="rateForm" class="placeholder">Calificación</label>
+        </div>
+        <div class="input-container ic2">
+          <input name="poster" id="posterForm" class="input" type="text" placeholder=" " />
+          <div class="cut cut-short"></div>
+          <label for="posterForm" class="placeholder">Póster(URL)</label>
+        </div>
+        <div class="genre-checkboxes">
+          <input type="checkbox" name="genre" value="Action" id="genre-action" />
+          <label for="genre-action">Acción</label>
+          <input type="checkbox" name="genre" value="Adventure" id="genre-adventure" />
+          <label for="genre-adventure">Aventura</label>
+          <input type="checkbox" name="genre" value="Comedy" id="genre-comedy" />
+          <label for="genre-comedy">Comedía</label>
+          <input type="checkbox" name="genre" value="Drama" id="genre-drama" />
+          <label for="genre-drama">Drama</label>
+          <input type="checkbox" name="genre" value="Fantasy" id="genre-fantasy" />
+          <label for="genre-fantasy">Fantasía</label>
+          <input type="checkbox" name="genre" value="Horror" id="genre-horror" />
+          <label for="genre-horror">Horror</label>
+          <input type="checkbox" name="genre" value="Mystery" id="genre-mystery" />
+          <label for="genre-mystery">Misterio</label>
+          <input type="checkbox" name="genre" value="Thriller" id="genre-thriller" />
+          <label for="genre-thriller">Thriller</label>
+          <input type="checkbox" name="genre" value="Sci-Fi" id="genre-sci-fi" />
+          <label for="genre-sci-fi">Sci-fi</label>
+        </div>
+      </div>
+      <div class="buttonContainer">    
+        <button type="submit" id="submit">Publicar</button>
+        <button type="reset" id="reset">Reiniciar</button>
+      </div>
+    </form>    
+  </section>
+  <div id="divContainerCards"></div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../../public/bundle.js"></script>
+</body>
+</html>

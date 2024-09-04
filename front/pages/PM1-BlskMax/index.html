@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel ="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Max Galarza M1</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="buttons">
+                <button class="slide"><a href="#SobreMi">Sobre Mí</a></button>
+                <button class="slide"><a href="#TecFav">Tecnologías Favoritas</a></button>
+                <button class="slide"><a href="#hobbies">Actividades Favoritas</a></button>
+                <button class="slide"><a href="#formBanner">Crear Actividad</a></button>
+                
+            </div>
+        </nav>
+    <h1 id="banner"> <img src="assets/images/maxBlu.png" width="500"></h1>
+    </header>
+    <main>
+        <section id="SobreMi">
+            <div class="SoMi">
+                <h1><img src="assets/images/soblue.png" width="550"></h1>
+                <p>
+                Hola! Yo soy Max, tengo 23 años y estoy<br>
+                aprendiendo programación pero también cuento<br>
+                con un par de años de experiencia en diseño gráfico<br>
+                y te ayudaré a que tu proyecto se vea justo como deseas!<br>
+                </p>
+            </div>
+            <div class="MaxPng">
+                <img src="assets/images/iconMax.png" width="300" >
+            </div> 
+        </section>
+        <div id="TecFav">
+            <h1><img src="assets/images/tecFavBlue.png" width="800"></h1>
+
+            <h1><img src="assets/images/htmlCssJs.png" height="300" id="htCsJs"></h1>
+        </div>
+        <section id="hobbies">
+            <img src="assets/images/hoBlue.png" width="700">
+            <div id="hobbiesIcons">
+                <img src="assets/images/airVid.png" width="210">
+                <img src="assets/images/airMov.png" width="210">
+                <img src="assets/images/airMus.png" width="210">
+                <img src="assets/images/airStan.png" width="210">
+            </div>
+            <img id="formBanner" src="assets/images/unaActividad.png" width="700">
+        </section>
+
+        <section>
+            <form id="formulario">
+                    <label for="title">Título:</label>
+                    <input type="text" id="textForm"
+                    placeholder="Crea un Título">
+                    
+                    <label for="image">URL de una imágen relacionada</label>
+                    <input type="url" id="imageForm"
+                    placeholder="URL:">
+
+                    <label for="description">Descripción:
+                    </label>
+                    <textarea id="descriptionForm"
+                    placeholder="Describe tu actividad"
+                    cols="30" rows="5"></textarea>
+                    <button id="buttonForm" type="button">Crear Actividad
+                    </button>
+            </form>
+                <div
+                    id="divContainerCards">
+                </div>
+                </section>
+            
+        
+    <footer id="footNote"><button class="slide"><a href="#buttons" >IR ARRIBA</a></footer></button>
+    <script src="scripts/index.js"></script>
+</body>
+</main>
+</html>
